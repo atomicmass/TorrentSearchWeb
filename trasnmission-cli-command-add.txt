@@ -1,0 +1,31 @@
+transmission-remote -n media:Something23 -w /Data/media/Series -a "magnet:?xt=urn:btih:7856BCAB233C0C6EA5A6E5BC615C23AD7A78C396&dn=MasterChef+Australia+S09E48+720p+HDTV+x264-ORENJI%5Brarbg%5D&tr=http%3A%2F%2Ftracker.trackerfix.com%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Feddie4.nl%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.mgtracker.org%3A2710%2Fannounce&tr=udp%3A%2F%2Fmgtracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337%2Fannounce&tr=http%3A%2F%2Fbt.artvid.ru%3A6969%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+
+Transmission stop start (logged in as sean)
+sudo service transmission-daemon stop
+sudo service transmission-daemon start
+
+tomcat installed in /opt/tomcat
+User tomcat
+passwd tomcat
+
+export CATALINA_HOME=/opt/tomcat/
+
+ps -ef | grep java | grep 8080
+
+/usr/lib/jvm/java-1.9.0-openjdk-amd64
+
+
+
+Startup definitions
+/etc/systemd/system
+
+uname -r
+4.4.0-81-generic
+
+
+Deploy:
+scp /D/git/Personal/TorrentSearch/TorrentSearchWeb/dist/TorrentSearchWeb.war sean@10.0.0.4:/opt/tomcat/webapps/
+
+Start MySQL 
+sudo service mysql start
+sudo service mysql stop
